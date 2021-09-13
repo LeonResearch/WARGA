@@ -11,3 +11,8 @@ The experimental implementation with Pytorch for the paper Wasserstein Adversari
 * munkres
 * pickle
 * scipy
+
+# Run
+* ```bash WARGA.py``` 
+* WARGA Clustering Notebook.ipynb for clustering results reproduction
+* WARGA Link Prediction Notebook.ipynb for link prediction results reproduction.
