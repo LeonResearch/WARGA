@@ -13,6 +13,9 @@ The experimental implementation with Pytorch for the paper Wasserstein Adversari
 * scipy
 
 # Run
-* ```WARGA.py``` for the proposed model.
-* ```WARGA Clustering Notebook.ipynb``` for clustering results reproduction.
-* ```WARGA Link Prediction Notebook.ipynb``` for link prediction results reproduction.
+* ```WARGA.py``` for WARGA-WC.
+* ```WARGA GP.py``` for WARGA-GP.
+* ```WARGA-GP Clustering Notebook.ipynb``` for WARGA-GP clustering results reproduction.
+* ```WARGA-GP Link Prediction Notebook.ipynb``` for WARGA-GP link prediction results reproduction.
+* ```WARGA-WC Clustering Notebook.ipynb``` for WARGA-WC clustering results reproduction.
+* ```WARGA-WC Link Prediction Notebook.ipynb``` for WARGA-WC link prediction results reproduction.
