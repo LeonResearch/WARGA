@@ -13,7 +13,7 @@ def load_data(dataset):
     names = ['x', 'tx', 'allx', 'graph']
     objects = []
     for i in range(len(names)):
-        with open(".data/cora/ind.{}.{}".format(dataset, names[i]), 'rb') as rf:
+        with open("data/cora/ind.{}.{}".format(dataset, names[i]), 'rb') as rf:
             u = pkl._Unpickler(rf)
             u.encoding = 'latin1'
             cur_data = u.load()
@@ -26,7 +26,7 @@ def load_data(dataset):
                 objects.append(pkl.load(f))
             '''    
     x, tx, allx, graph = tuple(objects)
-    test_idx_reorder = parse_index_file(".data/cora/ind.{}.test.index".format(dataset))
+    test_idx_reorder = parse_index_file("data/cora/ind.{}.test.index".format(dataset))
     test_idx_range = np.sort(test_idx_reorder)
 
     if dataset == 'citeseer':
@@ -55,7 +55,7 @@ def load_data_with_labels(dataset):
         https://stackoverflow.com/questions/11305790/pickle-incompatibility-of-numpy-arrays-between-python-2-and-3
         open("../../Data/GraphData/ind.{}.{}".format(dataset, names[i]), 'rb')
         '''
-        with open(".data/cora/ind.{}.{}".format(dataset, names[i]), 'rb') as rf:
+        with open("data/cora/ind.{}.{}".format(dataset, names[i]), 'rb') as rf:
             u = pkl._Unpickler(rf)
             u.encoding = 'latin1'
             cur_data = u.load()
@@ -64,7 +64,7 @@ def load_data_with_labels(dataset):
         #     pkl.load(open("data/ind.{}.{}".format(dataset, names[i]), 'rb')))
     x, y, tx, ty, allx, ally, graph  = tuple(objects)
     test_idx_reorder = parse_index_file(
-        ".data/cora/ind.{}.test.index".format(dataset))
+        "data/cora/ind.{}.test.index".format(dataset))
     test_idx_range = np.sort(test_idx_reorder)
 
     if dataset == 'citeseer':
